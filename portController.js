@@ -1,7 +1,7 @@
 const connection = require('./dbConnect');
 module.exports = {
-    queryportfolio: (callback) => {
-        let sqlString = `SELECT * FROM projects`;
+    queryportfolio: (req, res) => {
+        const sqlString = `SELECT * FROM projects`;
         connection.query(sqlString, (er, response) =>{
             if(er) throw er;
             console.log(response);
@@ -10,7 +10,7 @@ module.exports = {
                 i.technology = techArr;
             });
             console.log(response);
-            callback(response);
+            res.json(response);
 
         });
 
