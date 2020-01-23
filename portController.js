@@ -1,6 +1,7 @@
 const connection = require('./dbConnect');
 module.exports = {
     queryportfolio: (req, res) => {
+        console.log("we hit");
         const sqlString = `SELECT * FROM projects`;
         connection.query(sqlString, (er, response) =>{
             if(er) throw er;
