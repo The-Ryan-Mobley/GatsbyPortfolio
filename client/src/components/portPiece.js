@@ -2,28 +2,32 @@ import React, { useState, useEffect} from "react";
 import { Link } from "gatsby";
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import {TitleButton, PortGrid} from "./styledComponents";
+
+import "./style.css";
 
 export default function PortPiece(props) {
-    //need to send to props.url
-    //props.repo
+    //huh
+    //need to send to piece.url
+    //piece.repo
     return (
-        <div className="portPiece">
-            <Grid item container xs={12}>
+            <PortGrid item container xs={12}>
                 <Grid item xs={12} lg={5}>
-                    <img src={props.pic} alt="portPic" className="screenShot"/>
+                    <img src={props.piece.pic} alt="portPic" className="screenShot"/>
                 </Grid>
                 <Grid item xs={12} lg={7}>
                     <div className="HeaderLink">
-                        <Button color="primary"><h1>{props.projectTitle}</h1></Button>
+                        <TitleButton color="primary">{props.piece.projectTitle}</TitleButton>
                     </div>
                     <h4><strong>This project was built with: </strong><br/></h4>
-                    <p>&#x9 {props.technology}</p>
+                    <p> {`\t ${props.piece.technology}`}</p>
                 </Grid>
                 <Grid item xs={12}>
-                    <p class="portfolio-summary"><strong>Summary: </strong><br/>{props.projectDescription}</p>
-                    <Button color="primary"><strong>Github repo</strong></Button>
+                    <p class="portfolio-summary"><strong>Summary: </strong><br/>{props.piece.projectDescription}</p>
+                    <Grid item container xs={12} direction="row-reverse">
+                        <Button color="primary"><strong>Github repo</strong></Button>
+                    </Grid>
                 </Grid>
-            </Grid>
-        </div>
+            </PortGrid>
     )
 }

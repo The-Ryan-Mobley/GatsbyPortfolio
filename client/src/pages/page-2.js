@@ -28,7 +28,7 @@ const SecondPage = () => {
     <p>Welcome to page 2</p>
     {portWorks.length ? (
       portWorks.map(i => (
-        <PortPiece props={i} key={i.id}/>
+        <PortPiece piece={i} key={i.id}/>
       ))
     ) : (<p></p>)}
     <Link to="/">Go back to the homepage</Link>
