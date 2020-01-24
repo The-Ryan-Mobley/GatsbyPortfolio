@@ -5,8 +5,8 @@ import React from "react"
 const Footer = (props) => (
   <footer
     style={{
-      background: `#6D7A8A`,
-      marginBottom: `1.45rem`,
+      background: `#000000`,
+      padding:"1%"
     }}
   >
     <div
@@ -14,9 +14,10 @@ const Footer = (props) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        color: "#ffffff"
       }}
     >
-       © {new Date().getFullYear()}, Built with
+       © {new Date().getFullYear()}, Created by Ryan Mobley, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
     </div>

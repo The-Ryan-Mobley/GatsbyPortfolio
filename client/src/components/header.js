@@ -1,11 +1,13 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#6D7A8A`,
+      background: `#000000`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -27,6 +29,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <Grid item container xs={12} direction="row-reverse">
+        <Button><Link to="/page-2/" style={{color:"#ffffff"}}>Portfolio</Link></Button>
+      </Grid>
     </div>
   </header>
 )
