@@ -10,7 +10,7 @@ const SecondPage = () => {
   const queryDB = async () => {
     const result = await api.getPieces();
     if(result){
-      console.log(result)
+      console.log(result.data)
     }
   }
   useEffect(()=>{
