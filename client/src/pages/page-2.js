@@ -23,12 +23,14 @@ const SecondPage = () => {
 
   return (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <SEO title="Portfolio" />
+    <h1>Portfolio</h1>
+
     {portWorks.length ? (
       portWorks.map(i => (
-        <PortPiece piece={i} key={i.id}/>
+        <div className={`slider-${i.id}`} key={i.id}>
+          <PortPiece piece={i}/>
+        </div>
       ))
     ) : (<p></p>)}
     <Link to="/">Go back to the homepage</Link>

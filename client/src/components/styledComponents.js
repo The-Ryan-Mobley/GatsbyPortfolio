@@ -15,3 +15,9 @@ export const PortGrid = styled(Grid)({
     boxShadow: "10px 10px 10px -5px #000000bf"
 });
 
+export const InfoGrid = styled(Grid)({
+    marginLeft: "1%"
+})
+export const RepoGrid = styled(Grid)({
+    marginTop: "-4%"
+})
