@@ -1,8 +1,13 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+
+import {HeaderLinkGrid} from "./styledComponents"
+
+
 
 const Header = ({ siteTitle }) => (
   <header
@@ -18,7 +23,7 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0 }} className="siteTitle"> 
         <Link
           to="/"
           style={{
@@ -29,9 +34,11 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <Grid item container xs={12} direction="row-reverse">
+      <HeaderLinkGrid item container xs={10} md={12} direction="row" justify="flex-end" alignItems="flex-end">
+        <Button><Link to="/" style={{color:"#ffffff"}}>About Me</Link></Button>
         <Button><Link to="/page-2/" style={{color:"#ffffff"}}>Portfolio</Link></Button>
-      </Grid>
+        
+      </HeaderLinkGrid>
     </div>
   </header>
 )

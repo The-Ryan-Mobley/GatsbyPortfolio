@@ -24,7 +24,7 @@ const SecondPage = () => {
   return (
   <Layout>
     <SEO title="Portfolio" />
-    <h1>Portfolio</h1>
+    <h1 className="subHeader">Portfolio</h1>
 
     {portWorks.length ? (
       portWorks.map(i => (

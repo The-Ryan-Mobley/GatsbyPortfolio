@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
@@ -9,6 +10,10 @@ export const TitleButton = styled(Button)({
 });
 
 export const PortGrid = styled(Grid)({
+    borderStyle: "solid",
+    borderColor: "#000000",
+    borderWidth: "0.04rem",
+    borderRadius: "0px 15px 15px 15px",
     backgroundColor: "#ffffff",
     padding: "2%",
     marginBottom: "2%",
@@ -21,3 +26,7 @@ export const InfoGrid = styled(Grid)({
 export const RepoGrid = styled(Grid)({
     marginTop: "-4%"
 })
+export const HeaderLinkGrid = styled(Grid)({
+    marginBottom: "-3%"
+})
+

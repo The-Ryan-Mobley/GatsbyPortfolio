@@ -17,9 +17,9 @@ export default function PortPiece(props) {
                     <a className="urlLink" href={props.piece.url}>{props.piece.url}</a>
                 </Grid>
                 <InfoGrid item xs={12} lg={6}>
-                    <div className="HeaderLink">
-                        <TitleButton color="primary">{props.piece.projectTitle}</TitleButton>
-                    </div>
+                    <Grid container direction="row" justify="center" alignItems="center">
+                        <TitleButton href={props.piece.url} color="primary">{props.piece.projectTitle}</TitleButton>
+                    </Grid>
                     
                     <h4><strong>This project was built with: </strong><br/></h4>
                     <p> {`\t ${props.piece.technology}`}</p>
@@ -27,7 +27,7 @@ export default function PortPiece(props) {
                 <Grid item xs={12}>
                     <p class="portfolio-summary"><strong>Summary: </strong><br/>{props.piece.projectDescription}</p>
                     <RepoGrid item container xs={12} direction="row-reverse">
-                        <Button color="primary"><strong>Github repo</strong></Button>
+                        <Button color="primary" href={props.piece.repo}><strong>Github repo</strong></Button>
                     </RepoGrid>
                 </Grid>
             </PortGrid>

@@ -1,10 +1,19 @@
 body{
-    background: rgb(166,166,222);
-    background: linear-gradient(25deg, rgba(166,166,222,1) 10%, rgba(255,255,255,1) 97%);
+    background: rgb(59,123,157);
+    background: linear-gradient(71deg, rgba(59,123,157,1) 0%, rgba(116,161,185,1) 38%, rgba(208,223,231,1) 76%, rgba(255,255,255,1) 100%);
     animation: backgroundAnimation 25s ease infinite;
     background-size: 300% 300%;
     background-repeat:no-repeat;
     background-position-x:0%;
+}
+.subHeader{
+    text-decoration: underline;
+}
+.screenShot{
+    border-style: solid;
+    border-color: #000000;
+    border-width: 0.04rem;
+    border-radius: 15px 15px 15px 15px;
 }
 .pageBody{
     border-style: solid;
@@ -13,7 +22,7 @@ body{
     background-color: #ffffff;
 }
 .profile-pic{
-    margin: 3% 2%;
+    margin: 8% 2% 3% 2%;
     float:left;
     max-width: 15rem;
     max-height: auto;
@@ -27,8 +36,10 @@ body{
     line-height: 2rem;
     padding: 3%;
     margin: 1%;
+    animation: rollText 1s ease-out 1;
 }
 .portPiece{
+    
     background-color: #ffffff;
     padding: 2%;
     margin-bottom: 2%;
@@ -36,6 +47,9 @@ body{
 .urlLink{
     font-size: 0.9rem;
     margin-top: -5%;
+}
+.headerLink{
+    text-align: center;
 }
 .slider-0{
     animation: slide-up 0.4s ease;   
@@ -67,6 +81,12 @@ body{
 .slider-9{
     animation: slide-up 4s ease;   
 }
+@media (max-width: 320px){
+    .siteTitle{
+        text-align: center;
+    }
+
+}
 @keyframes slide-up {
     0% {
         opacity: 0;
@@ -86,4 +106,14 @@ body{
     0%{background-position:0% 99%}
     50%{background-position:100% 2%}
     100%{background-position:0% 99%}
+}
+@keyframes rollText{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
 }

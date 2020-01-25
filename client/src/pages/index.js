@@ -13,9 +13,9 @@ const IndexPage = () => (
     <SEO title="Bio Page" />
     <Grid container>
       <Grid item xs={12}>
-        <h1>About Me</h1>
+        <h1 className="subHeader">About Me</h1>
       </Grid>
-      <div className="pageBody">
+      <div className="pageBody slider-1">
         <Grid item xs={12}>
           <img src={profilePic} alt="profile" className="profile-pic"/>
             <p className="paragraph">
