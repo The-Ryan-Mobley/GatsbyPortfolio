@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
+import { Wave } from 'react-animated-text';
 import Grid from '@material-ui/core/Grid';
 import Layout from "../components/layout"
 import "../components/style.css";
@@ -8,6 +9,8 @@ import "../components/style.css";
 import SEO from "../components/seo"
 import "../components/style.css";
 import profilePic from "../images/20190822_141852.jpg";
+
+import Text from "../components/text";
 const IndexPage = () => (
   <Layout>
     <SEO title="Bio Page" />
@@ -18,8 +21,7 @@ const IndexPage = () => (
       <div className="pageBody slider-1">
         <Grid item xs={12}>
           <img src={profilePic} alt="profile" className="profile-pic"/>
-            <p className="paragraph">
-            Lorem ipsum dolor amet marfa 90's salvia gluten-free cred snackwave dreamcatcher helvetica chillwave thundercats four dollar toast farm-to-table food truck. Trust fund put a bird on it XOXO, humblebrag bespoke microdosing tofu tumeric pok pok kale chips palo santo. Mustache direct trade squid thundercats, chia quinoa farm-to-table deep v hell of viral. Put a bird on it poke bicycle rights, taxidermy chambray microdosing cardigan disrupt wolf woke palo santo kinfolk blue bottle.
+          <Text paragraph="Lorem ipsum dolor amet marfa 90's salvia gluten-free cred snackwave dreamcatcher helvetica chillwave thundercats four dollar toast farm-to-table food truck. Trust fund put a bird on it XOXO, humblebrag bespoke microdosing tofu tumeric pok pok kale chips palo santo. Mustache direct trade squid thundercats, chia quinoa farm-to-table deep v hell of viral. Put a bird on it poke bicycle rights, taxidermy chambray microdosing cardigan disrupt wolf woke palo santo kinfolk blue bottle.
 
 Kickstarter banjo raw denim lo-fi vexillologist. Irony selfies disrupt venmo. Hella succulents franzen af put a bird on it. Pop-up tilde whatever vinyl, try-hard literally kickstarter authentic franzen knausgaard paleo gluten-free artisan schlitz bushwick. Authentic fashion axe trust fund, meditation salvia distillery offal. Salvia hexagon pour-over adaptogen chambray blue bottle. Health goth fam wolf, chambray vegan pitchfork forage try-hard.
 
@@ -31,8 +33,8 @@ Prism cliche cornhole tilde yr blog. Live-edge single-origin coffee shoreditch, 
 
 Oh. You need a little dummy text for your mockup? How quaint.
 
-I bet you’re still using Bootstrap too…
-            </p>
+I bet you’re still using Bootstrap too…"/>
+            
         </Grid>
       </div>
     </Grid>
