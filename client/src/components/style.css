@@ -1,6 +1,8 @@
 body{
-    background: rgb(59,123,157);
-    background: linear-gradient(71deg, rgba(59,123,157,1) 0%, rgba(116,161,185,1) 38%, rgba(208,223,231,1) 76%, rgba(255,255,255,1) 100%);
+    /* background: rgb(59,123,157);
+    background: linear-gradient(71deg, rgba(59,123,157,1) 0%, rgba(116,161,185,1) 38%, rgba(208,223,231,1) 76%, rgba(255,255,255,1) 100%); */
+    background: rgb(53,97,121);
+background: linear-gradient(71deg, rgba(53,97,121,1) 0%, rgba(118,148,164,1) 26%, rgba(153,175,187,1) 45%, rgba(190,204,212,1) 67%, rgba(255,255,255,1) 100%);
     animation: backgroundAnimation 25s ease infinite;
     background-size: 300% 300%;
     background-repeat:no-repeat;
@@ -16,13 +18,15 @@ body{
     border-radius: 15px 15px 15px 15px;
 }
 .pageBody{
+    width: 100%;
     border-style: solid;
     border-width: 1px;
     box-shadow: -10px 10px 10px -5px #000000bf;
     background-color: #ffffff;
+    padding: 3%;
 }
 .profile-pic{
-    margin: 8% 2% 3% 2%;
+    margin: 5% 2% 3% 2%;
     float:left;
     max-width: 15rem;
     max-height: auto;
@@ -30,13 +34,17 @@ body{
     background-color: transparent;
     box-shadow: -10px 10px 10px -5px #000000bf;
 }
+
+.indented{
+    text-indent: 20px;
+}
 .paragraph{
-    text-indent: 40px;
+    margin-top: -3%;
     width: 100%;
     line-height: 2rem;
-    padding: 3%;
-    margin: 1%;
-    animation: rollText 1s ease-out 1;
+}
+.spacer{
+    padding: 1%;
 }
 .portPiece{
     
@@ -81,6 +89,52 @@ body{
 .slider-9{
     animation: slide-up 4s ease;   
 }
+.fader-0{
+    animation: fadeInLeft 0.25s ease;
+}
+.fader-1{
+    animation: fadeInLeft 0.5s ease;
+}
+.fader-2{
+    animation: fadeInLeft 0.75s ease;
+}
+.fader-3{
+    animation: fadeInLeft 1s ease;
+}
+.fader-4{
+    animation: fadeInLeft 1.25s ease;
+}
+.fader-5{
+    animation: fadeInLeft 1.5s ease;
+}
+.fader-6{
+    animation: fadeInLeft 1.75s ease;
+}
+.fader-7{
+    animation: fadeInLeft 2s ease;
+}
+.fader-8{
+    animation: fadeInLeft 2.25s ease;
+}
+.fader-9{
+    animation: fadeInLeft 2.5s ease;
+}
+.fader-10{
+    animation: fadeInLeft 2.75s ease;
+}
+.fader-11{
+    animation: fadeInLeft 7s ease;
+}
+.fader-12{
+    animation: fadeInLeft 7.5s ease;
+}
+.fader-13{
+    animation: fadeInLeft 8s ease;
+}
+.fader-14{
+    animation: fadeInLeft 8.5s ease;
+}
+
 @media (max-width: 320px){
     .siteTitle{
         text-align: center;
@@ -117,3 +171,13 @@ body{
         transform: perspective(500px) translate3d(0, 0, 0);
     }
 }
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }  
