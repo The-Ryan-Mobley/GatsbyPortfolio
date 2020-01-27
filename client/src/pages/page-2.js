@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PortPiece from "../components/portPiece"
+import ToTopButton from "../components/toTopButton"
 
 import api from "../api";
 
@@ -33,7 +34,7 @@ const SecondPage = () => {
         </div>
       ))
     ) : (<p></p>)}
-    <Link to="/">Go back to the homepage</Link>
+    <ToTopButton/>
   </Layout>
 )}
 

@@ -8,8 +8,12 @@ import "../components/style.css";
 import SEO from "../components/seo"
 import "../components/style.css";
 import profilePic from "../images/20190822_141852.jpg";
-
+import linkedInLogo from "../images/5a22d420c9a5a7.416105621512231968826.png";
+import gitHubLogo from "../images/github.png";
+import resumeLogo from "../images/document-icon-36561.png";
+import ToTopButton from "../components/toTopButton"
 import Text from "../components/text";
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Bio Page" />
@@ -50,7 +54,7 @@ const IndexPage = () => (
           <p className="paragraph fader-9">
             UI. Don't just take my word for it! Feel free to look at the list of projects I've worked on by clicking the portfolio link above.<br/></p>
           <p className="paragraph fader-10">
-          <strong>Specialized In: </strong><br/>
+          <strong className="subHeader">Specialized In: </strong><br/>
                     Javascript, JQuery, Node.js, Express, React.js, Redux.js, SocketIo, CSS ,HTML, MYSQL, 
                     MongoDB.<br/>
                     <strong>Feel free to call or email me at:</strong><br/>
@@ -59,12 +63,25 @@ const IndexPage = () => (
           </p>
             
         </Grid>
+        <Grid item container xs={12} direction="row" justify="flex-start">
+          <Grid item xs={12}>
+            <p className="subHeader fader-10"><strong>Links to my Social Media and Resume</strong></p>
+          </Grid>
+          <a href="https://github.com/The-Ryan-Mobley" className="smallBox fader-10" id="firstbox">
+            <img className="linkBox" id="github" src={gitHubLogo} alt="mygithub"/>
+          </a>
+          <a href="https://www.linkedin.com/in/ryan-mobley-b843b5186/" className="smallBox fader-10">
+            <img className="linkBox" id="linked-in" src={linkedInLogo} alt="ln"/>
+          </a>
+          <a href="https://docs.google.com/document/d/1z2_zsn50VmR_pMpnk31xw3CZBzamcT8U8RyGtp9Ezr4/edit?usp=sharing"
+            className="smallBox fader-10">
+              <img className="linkBox" id="resume" src={resumeLogo} alt="resume"/>
+          </a>
+        </Grid>
       </div>
     </Grid>
+    <ToTopButton/>
     
-    
-    
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 

@@ -1,9 +1,11 @@
 body{
     /* background: rgb(59,123,157);
     background: linear-gradient(71deg, rgba(59,123,157,1) 0%, rgba(116,161,185,1) 38%, rgba(208,223,231,1) 76%, rgba(255,255,255,1) 100%); */
-    background: rgb(53,97,121);
-background: linear-gradient(71deg, rgba(53,97,121,1) 0%, rgba(118,148,164,1) 26%, rgba(153,175,187,1) 45%, rgba(190,204,212,1) 67%, rgba(255,255,255,1) 100%);
-    animation: backgroundAnimation 25s ease infinite;
+    /* background: #356179;
+background: linear-gradient(71deg, rgba(53,97,121,1) 0%, rgba(118,148,164,1) 26%, rgba(153,175,187,1) 45%, rgba(190,204,212,1) 67%, rgba(255,255,255,1) 100%); */
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(53,97,121,1) 37%, rgba(190,204,212,1) 68%, rgba(53,97,121,1) 96%);
+    animation: backgroundAnimation 35s ease infinite;
     background-size: 300% 300%;
     background-repeat:no-repeat;
     background-position-x:0%;
@@ -13,26 +15,28 @@ background: linear-gradient(71deg, rgba(53,97,121,1) 0%, rgba(118,148,164,1) 26%
 }
 .screenShot{
     border-style: solid;
-    border-color: #000000;
+    border-color: #007DC2;
     border-width: 0.04rem;
     border-radius: 15px 15px 15px 15px;
 }
 .pageBody{
     width: 100%;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0.1rem;
+    border-color: #007DC2;
     box-shadow: -10px 10px 10px -5px #000000bf;
     background-color: #ffffff;
     padding: 3%;
+    border-radius: 0px 15px 15px 15px;
 }
 .profile-pic{
-    margin: 5% 2% 3% 2%;
+    margin: 4% 2% 4% 2%;
     float:left;
     max-width: 15rem;
     max-height: auto;
     transform: rotate(270deg);
     background-color: transparent;
-    box-shadow: -10px 10px 10px -5px #000000bf;
+    box-shadow: -10px -10px 10px -5px #000000bf;
 }
 
 .indented{
@@ -59,35 +63,33 @@ background: linear-gradient(71deg, rgba(53,97,121,1) 0%, rgba(118,148,164,1) 26%
 .headerLink{
     text-align: center;
 }
-.slider-0{
+.smallBox{
+    margin: 1%;
+    max-width:3.125em;
+    max-height:auto;
+}
+.smallBox:hover{
+    opacity: 0.5;
+}
+.topButton{
+    position: fixed;
+    bottom: 0;
+    right: 1%;
+  }
+.slider-0,.slider-1{
     animation: slide-up 0.4s ease;   
 }
-.slider-1{
+.slider-2,.slider-3{
     animation: slide-up 0.8s ease;   
 }
-.slider-2{
+.slider-4,.slider-5{
     animation: slide-up 1.2s ease;   
 }
-.slider-3{
+.slider-6,.slider-7{
     animation: slide-up 1.6s ease;   
 }
-.slider-4{
+.slider-8,.slider-9{
     animation: slide-up 2s ease;   
-}
-.slider-5{
-    animation: slide-up 2.4s ease;   
-}
-.slider-6{
-    animation: slide-up 2.8s ease;   
-}
-.slider-7{
-    animation: slide-up 3.2s ease;   
-}
-.slider-8{
-    animation: slide-up 3.6s ease;   
-}
-.slider-9{
-    animation: slide-up 4s ease;   
 }
 .fader-0{
     animation: fadeInLeft 0.25s ease;

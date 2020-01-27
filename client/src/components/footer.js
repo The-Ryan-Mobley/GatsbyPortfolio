@@ -6,7 +6,10 @@ const Footer = (props) => (
   <footer
     style={{
       background: `#000000`,
-      padding:"1%"
+      padding:"1%",
+      borderTopStyle: `solid`,
+      borderTopWidth: `0.3rem`,
+      borderTopColor:`#007dc2`
     }}
   >
     <div

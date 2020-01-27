@@ -11,8 +11,8 @@ export const TitleButton = styled(Button)({
 
 export const PortGrid = styled(Grid)({
     borderStyle: "solid",
-    borderColor: "#000000",
-    borderWidth: "0.04rem",
+    borderColor: "#007DC2",
+    borderWidth: "0.1rem",
     borderRadius: "0px 15px 15px 15px",
     backgroundColor: "#ffffff",
     padding: "2%",
@@ -29,4 +29,6 @@ export const RepoGrid = styled(Grid)({
 export const HeaderLinkGrid = styled(Grid)({
     marginBottom: "-3%"
 })
-
+export const BlueButton = styled(Button)({
+    backgroundColor: "#007DC2"
+})
