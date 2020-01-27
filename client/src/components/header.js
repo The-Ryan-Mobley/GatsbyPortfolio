@@ -5,6 +5,7 @@ import React from "react"
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
+
 import {HeaderLinkGrid} from "./styledComponents"
 
 
@@ -37,9 +38,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <HeaderLinkGrid item container xs={10} md={12} direction="row" justify="flex-end" alignItems="flex-end">
-        <Button><Link to="/" style={{color:"#ffffff"}}>About Me</Link></Button>
-        <Button><Link to="/page-2/" style={{color:"#ffffff"}}>Portfolio</Link></Button>
+      <HeaderLinkGrid item container xs={10} sm={12} md={12} direction="row" justify="flex-end" alignItems="flex-end">
+        <Button ><Link to="/" style={{color:"#ffffff"}}>About Me</Link></Button>
+        <Button className="headerButtons" ><Link to="/portfolio/" style={{color:"#ffffff"}}>Portfolio</Link></Button>
         
       </HeaderLinkGrid>
     </div>

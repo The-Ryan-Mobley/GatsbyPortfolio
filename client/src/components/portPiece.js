@@ -14,15 +14,13 @@ export default function PortPiece(props) {
             <PortGrid item container xs={12}>
                 <Grid item container xs={12} lg={5} justify="center">
                     <img src={props.piece.pic} alt="portPic" className="screenShot"/>
-                    <a className="urlLink" href={props.piece.url}>{props.piece.url}</a>
                 </Grid>
                 <InfoGrid item xs={12} lg={6}>
                     <Grid container direction="row" justify="center" alignItems="center">
                         <TitleButton href={props.piece.url} color="primary">{props.piece.projectTitle}</TitleButton>
                     </Grid>
                     
-                    <h4><strong>This project was built with: </strong><br/></h4>
-                    <p> {`\t ${props.piece.technology}`}</p>
+                    <p><strong>This project was built with: </strong><br/>  {'\t'}{`${props.piece.technology}`}</p>
                 </InfoGrid>
                 <Grid item xs={12}>
                     <p class="portfolio-summary"><strong>Summary: </strong><br/>{props.piece.projectDescription}</p>

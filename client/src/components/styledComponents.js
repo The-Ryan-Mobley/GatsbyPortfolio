@@ -5,8 +5,9 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
 export const TitleButton = styled(Button)({
-    fontSize: "2.5rem",
-    textDecoration: "underline"
+    textAlign: "center",
+    fontSize: "2.3rem",
+    textDecoration: "underline",
 });
 
 export const PortGrid = styled(Grid)({
