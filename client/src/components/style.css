@@ -9,7 +9,6 @@ background: linear-gradient(71deg, rgba(53,97,121,1) 0%, rgba(118,148,164,1) 26%
     background-size: 300% 300%;
     background-repeat:no-repeat;
     background-position-x:0%;
-    overflow-y: scroll;
 }
 .subHeader{
     text-decoration: underline;
