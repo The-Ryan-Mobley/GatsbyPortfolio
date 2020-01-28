@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PortPiece from "../components/portPiece"
 import ToTopButton from "../components/toTopButton"
+import Grid from '@material-ui/core/Grid';
 
 import api from "../api";
 
@@ -26,6 +27,7 @@ const SecondPage = () => {
     <SEO title="Portfolio" />
     <div className="headerBox">
       <h1 className="subHeader portTitle">Portfolio</h1>
+      <p className="indented paragraph">Here are some of the projects I've worked on. Click the titles to view their respective webpages</p>
     </div>
     
 
