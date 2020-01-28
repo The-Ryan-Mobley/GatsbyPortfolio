@@ -178,7 +178,9 @@ body{
     .siteTitle{
         text-align: center;
     }
-
+    .screenShot{
+        max-height: 15rem;
+    }
     .profile-pic{ 
         max-width: 10rem;
         margin-top: 10%;
@@ -197,7 +199,9 @@ body{
     .siteTitle{
         text-align: center;
     }
-
+    .screenShot{
+        max-height: 15rem;
+    }
     .profile-pic{ 
         max-width: 10rem;
         margin-top: 10%;
@@ -218,7 +222,9 @@ body{
     .siteTitle,.portTitle{
         text-align: center;
     }
-    
+    .screenShot{
+        max-height: 15rem;
+    }
     .profile-pic{
         max-width: 10rem;
         margin: 10% 0% 4% 1%;
@@ -236,6 +242,9 @@ body{
     .siteTitle{
         text-align: center;
     }
+    .screenShot{
+        max-height: 20rem;
+    }
     .profile-pic{
         max-width: 11rem;
         margin: 6% 0% 4% 1%;
@@ -250,6 +259,9 @@ body{
     }
 }
 @media (min-width: 600px) and (max-width: 768px){
+    .screenShot{
+        max-height: 30rem;
+    }
     .profile-pic{
         max-width: 13rem;
         margin: 6% 0% 4% 1%;

@@ -1,15 +1,15 @@
 USE t0dmmr63b9fzxfqe;
--- TRUNCATE classact.projects;
-CREATE TABLE projects(
-	id INTEGER(10) AUTO_INCREMENT NOT NULL,
-    projectTitle VARCHAR(50) NOT NULL,
-    pic VARCHAR(200) NOT NULL,
-    url VARCHAR(100) NOT NULL,
-    repo VARCHAR(100) NOT NULL,
-    technology VARCHAR(300) NOT NULL,
-    projectDescription VARCHAR(3000) NOT NULL,
-    PRIMARY KEY(id)
-);
+TRUNCATE t0dmmr63b9fzxfqe.projects;
+-- CREATE TABLE projects(
+-- 	id INTEGER(10) AUTO_INCREMENT NOT NULL,
+--     projectTitle VARCHAR(50) NOT NULL,
+--     pic VARCHAR(200) NOT NULL,
+--     url VARCHAR(100) NOT NULL,
+--     repo VARCHAR(100) NOT NULL,
+--     technology VARCHAR(300) NOT NULL,
+--     projectDescription VARCHAR(3000) NOT NULL,
+--     PRIMARY KEY(id)
+-- );
 INSERT INTO projects (projectTitle,pic,url,repo,technology,projectDescription)
 VALUES
 ("Gif Site", "/images/gifSite.png","https://the-ryan-mobley.github.io/GIF_Site/","https://github.com/The-Ryan-Mobley/GIF_Site","Bootstrap styling framework, Javascript, Jquery, the GIPHY Api","This website utilizes GIPHY’s vast api to allow users to search for gifs using a tag system. 
@@ -22,5 +22,5 @@ Users can search for tags which will search for gifs associated with the tag. if
 ("Click-React-App","/images/CRA.png","https://the-ryan-mobley.github.io/click-react-app/","https://github.com/The-Ryan-Mobley/click-react-app","Serverless using only React and Skeleton css","This website uses react to create a memory style game. The page will display a series of images. When the user clicks an image the images will shuffle. If the user clicks a new image the score will increase, if they pick one of the six previous images they've cli- cked the score will decrase. The goal is to get as high of a score as possible."),
 ("Boogle","/images/boogle.png","https://limitless-garden-74095.herokuapp.com/","https://github.com/The-Ryan-Mobley/boogle","MERN stack MongoDB, Express, React, Nodejs","boogle is a wepsite where you can search for books and save them in a collection to keep track of later. Boogle is very useful for keeping track of multiple books for things like research work. This is a full-stack MERN (mongodb, express, react, node) app that uses the google books api to allow users to curate a collection of books in a mongo database."),
 ("Rocks-fall", "/images/lobbyScreen.png","https://vast-citadel-52957.herokuapp.com/","https://github.com/The-Ryan-Mobley/rocks-fall","MERN stack MongoDB, Express, React, Node.js, with Redux and SocketIo","Rocks-Fall is an app that lets users keep track of their Dungeons and Dragons characters, and the large amount of data needed for them. Users can also chat and host games for their D&D sessions, where they can view other user's characters. This app makes robust use of redux, and the wealth of data required for D&D with over 300 spells for players to use!"),
-("Hook Scrape", "/images/hookscrape.png","https://powerful-cove-03486.herokuapp.com/","https://github.com/The-Ryan-Mobley/hookScrape","MERN stack MongoDB, Express, React, Node.js. using material UI for the layout","This is an improved version of NewsScrape converted to a MERN stack. I used this project to expand upon the original and to test out recursive components using React Hooks. The main improvement is a greatly expanded chat function with comment and reply threads.");
+("Hook Scrape", "/images/hookscrape.png","https://powerful-cove-03486.herokuapp.com/","https://github.com/The-Ryan-Mobley/hookScrape","MERN stack MongoDB, Express, React, Node.js. using material UI for the layout","This is an improved version of Today I Scraped (see it's section below) that I converted to a MERN stack. I used this project to expand upon the original and to test out recursive components using React Hooks. The main improvement is a greatly expanded chat function with comment and reply threads. This site scrapes to trending section of reddit's 'todayilearned' or TIL subreddit. Avoid all the wierd ads disguised as post, and the pop ups about their app. The site does offer links to both the reddit thread, and the posted link.");
 
