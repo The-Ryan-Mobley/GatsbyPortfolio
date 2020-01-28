@@ -13,7 +13,7 @@ export default function PortPiece(props) {
     return (
             <PortGrid item container xs={12}>
                 <Grid item container xs={12} lg={5} justify="center">
-                    <img src={`%PUBLIC_URL%${props.piece.pic}`} alt="portPic" className="screenShot"/>
+                    <img src={`${props.piece.pic}`} alt="portPic" className="screenShot"/>
                 </Grid>
                 <InfoGrid item xs={12} lg={6}>
                     <Grid container direction="row" justify="center" alignItems="center">
