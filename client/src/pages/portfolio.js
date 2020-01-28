@@ -14,7 +14,6 @@ const SecondPage = () => {
     const result = await api.getPieces();
     if(result){
       setPort(result.data.reverse());
-      console.log(result.data)
     }
   }
   useEffect(()=>{
