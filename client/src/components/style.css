@@ -3,8 +3,16 @@ body{
     background: linear-gradient(71deg, rgba(59,123,157,1) 0%, rgba(116,161,185,1) 38%, rgba(208,223,231,1) 76%, rgba(255,255,255,1) 100%); */
     /* background: #356179;
 background: linear-gradient(71deg, rgba(53,97,121,1) 0%, rgba(118,148,164,1) 26%, rgba(153,175,187,1) 45%, rgba(190,204,212,1) 67%, rgba(255,255,255,1) 100%); */
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(53,97,121,1) 37%, rgba(190,204,212,1) 68%, rgba(53,97,121,1) 96%);
+    /* background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(53,97,121,1) 37%, rgba(190,204,212,1) 68%, rgba(53,97,121,1) 96%); */
+    background: #28a6f0;
+    background: radial-gradient(
+        circle, 
+        #28a6f0 0%, 
+        #1848b3 24%, 
+        #31b1fb 67%, 
+        #1848b3 96%
+        );
     animation: backgroundAnimation 35s ease infinite;
     background-size: 300% 300%;
     background-repeat:no-repeat;
