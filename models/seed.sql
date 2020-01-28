@@ -1,15 +1,15 @@
-USE classact;
-TRUNCATE classact.projects;
--- CREATE TABLE projects(
--- 	id INTEGER(10) AUTO_INCREMENT NOT NULL,
---     projectTitle VARCHAR(50) NOT NULL,
---     pic VARCHAR(200) NOT NULL,
---     url VARCHAR(100) NOT NULL,
---     repo VARCHAR(100) NOT NULL,
---     technology VARCHAR(300) NOT NULL,
---     projectDescription VARCHAR(3000) NOT NULL,
---     PRIMARY KEY(id)
--- );
+USE t0dmmr63b9fzxfqe;
+-- TRUNCATE classact.projects;
+CREATE TABLE projects(
+	id INTEGER(10) AUTO_INCREMENT NOT NULL,
+    projectTitle VARCHAR(50) NOT NULL,
+    pic VARCHAR(200) NOT NULL,
+    url VARCHAR(100) NOT NULL,
+    repo VARCHAR(100) NOT NULL,
+    technology VARCHAR(300) NOT NULL,
+    projectDescription VARCHAR(3000) NOT NULL,
+    PRIMARY KEY(id)
+);
 INSERT INTO projects (projectTitle,pic,url,repo,technology,projectDescription)
 VALUES
 ("Gif Site", "/images/gifSite.png","https://the-ryan-mobley.github.io/GIF_Site/","https://github.com/The-Ryan-Mobley/GIF_Site","Bootstrap styling framework, Javascript, Jquery, the GIPHY Api","This website utilizes GIPHY’s vast api to allow users to search for gifs using a tag system. 
