@@ -20,7 +20,7 @@ const Footer = (props) => (
         color: "#ffffff"
       }}
     >
-       © {new Date().getFullYear()}, Created by Ryan Mobley, Built with
+      Created by Ryan Mobley © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
     </div>

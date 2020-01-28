@@ -13,7 +13,7 @@ const SecondPage = () => {
   const queryDB = async () => {
     const result = await api.getPieces();
     if(result){
-      setPort(result.data);
+      setPort(result.data.reverse());
       console.log(result.data)
     }
   }

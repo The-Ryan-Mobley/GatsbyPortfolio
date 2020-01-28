@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import Grid from '@material-ui/core/Grid';
 import Layout from "../components/layout"
 import "../components/style.css";
+import Container from '@material-ui/core/Container';
 
 import SEO from "../components/seo"
 import "../components/style.css";
@@ -11,18 +12,16 @@ import profilePic from "../images/20190822_141852.jpg";
 import linkedInLogo from "../images/5a22d420c9a5a7.416105621512231968826.png";
 import gitHubLogo from "../images/github.png";
 import resumeLogo from "../images/document-icon-36561.png";
-import ToTopButton from "../components/toTopButton"
-import Text from "../components/text";
+import ToTopButton from "../components/toTopButton";
+import {pageBodyGrid} from "../components/styledComponents"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Bio Page" />
-    <Grid container>
-      <Grid item xs={12}>
-        
-      </Grid>
+    <SEO title="Bio Page" author="Ryan Mobley"/>
+    <Container maxWidthXl>
+
       <div className="pageBody">
-        <Grid item xs={12}>
+        <pageBodyGrid item xs={12}>
           <h1 className="subHeader title">About Me</h1>
             <img src={profilePic} alt="profile" className="profile-pic"/>
           <div className="spacer"></div>
@@ -48,14 +47,13 @@ const IndexPage = () => (
             UI. Don't just take my word for it! Feel free to look at the list of projects I've worked on by clicking the portfolio link above.<br/></p>
           <p className="paragraph fader-2">
           <strong className="subHeader">Specialized In: </strong><br/>
-                    Javascript, JQuery, Node.js, Express, React.js, Redux.js, SocketIo, CSS ,HTML, MYSQL, 
+                    Javascript, JQuery, Node.js, Express, React.js, Redux.js, WebSockets, CSS ,HTML, MYSQL, 
                     MongoDB.<br/>
-                    <strong>Feel free to call or email me at:</strong><br/>
+                    <strong>My Contact info:</strong><br/>
                     832-712-2803<br/>
                     <a href = "mailto: ryan.mobley94@gmai.com">ryan.mobley94@gmail.com</a>
           </p>
             
-        </Grid>
         <Grid item container xs={12} direction="row" justify="flex-start">
           <Grid item xs={12}>
             <p className="subHeader fader-3"><strong>Links to my Social Media and Resume</strong></p>
@@ -71,8 +69,9 @@ const IndexPage = () => (
               <img className="linkBox" id="resume" src={resumeLogo} alt="resume"/>
           </a>
         </Grid>
+        </pageBodyGrid>
       </div>
-    </Grid>
+    </Container>
     <ToTopButton/>
     
   </Layout>
