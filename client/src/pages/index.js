@@ -28,23 +28,12 @@ const IndexPage = () => (
           <p className="indented paragraph fader-0">
             Hello and welcome to my website! I am a Full-Stack developer with a
             certificate in Full Stack Web Development from the University of
-            Texas Austin Coding Bootcamp. I am skilled in both backend 
-            development specializing in Nodejs, and frontend javascript with
-            React. I am a detail oriented-problem solver, I work very well
-            under stressful situations; while maintaining enough of my sense of
-            humor to collaborate with a team in a productive and friendly
-            manner. Whenever I work with a team if i'm not leading the project’s
-            design, I am the workhorse guaranteeing it’s deployment.<br/></p>
-          <p className="paragraph indented fader-1">
-            I've loved computers all my life. My hope is that I can give back to the world of programming. I also love to 
-            create, and one of my greatest joys in life is the freedom, and infinite possibilities that have been opened up 
-            to me thanks to my ability to code. In my time as a developer I have been able to work on a myriad of
-            projects with a plethora of technologies, and creative directions. It is my hope that I can bring that same
-            spark, and sense of wonder that has drawn me to this field throughout my personal life into my professional
-            career. Some of my strengths include: Database management with both SQL and no SQL databases adhering
-            to the MVC design pattern. Building powerful and dynamic webpages with React and Redux. Designing responsive page
-            layouts using CSS and a variety of frameworks such as: Bootstrap, Materialize, and Material
-            UI. Don't just take my word for it! Feel free to look at the list of projects I've worked on by clicking the portfolio link above.<br/></p>
+            Texas Austin Coding Bootcamp 
+            {/* intro here */}
+            <br/></p>
+          <p className="paragraph indented .fader-1">
+            {/* talk about qualifications and acomplishments */}
+            <br/></p>
           <p className="paragraph fader-2">
           <strong className="subHeader">Specialized In: </strong><br/>
                     Javascript, JQuery, Node.js, Express, React.js, Redux.js, WebSockets, CSS ,HTML, MYSQL, 
