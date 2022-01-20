@@ -4,12 +4,13 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
+
 export const TitleButton = styled(Button)({
     textAlign: "center",
     fontSize: "2.3rem",
     textDecoration: "underline",
 });
-export const pageBodyGrid = styled(Grid)({
+export const PageBodyGrid = styled(Grid)({
     width: "100%",
     borderStyle: "solid",
     borderWidth: "0.1rem",

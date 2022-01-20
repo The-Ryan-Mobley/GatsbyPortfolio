@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Ryan Mobley`,
-    description: `My portfolio as a JavaScriptDeveloper`,
+    description: `My portfolio as a Software Engineer`,
     author: `Ryan Mobley`,
   },
   proxy: {

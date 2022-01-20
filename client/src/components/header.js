@@ -40,6 +40,7 @@ const Header = ({ siteTitle }) => (
       </h1>
       <HeaderLinkGrid item container xs={10} sm={12} md={12} direction="row" justify="flex-end" alignItems="flex-end">
         <Button ><Link to="/" style={{color:"#ffffff"}}>About Me</Link></Button>
+        <Button ><Link to="/workexp" style={{color:"#ffffff"}}>Experience</Link></Button>
         <Button className="headerButtons" ><Link to="/portfolio/" style={{color:"#ffffff"}}>Portfolio</Link></Button>
         
       </HeaderLinkGrid>

@@ -1,4 +1,5 @@
 import React from "react"
+import {useState, useEffect} from "react"
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import Grid from '@material-ui/core/Grid';
@@ -13,28 +14,55 @@ import linkedInLogo from "../images/5a22d420c9a5a7.416105621512231968826.png";
 import gitHubLogo from "../images/github.png";
 import resumeLogo from "../images/document-icon-36561.png";
 import ToTopButton from "../components/toTopButton";
-import {pageBodyGrid} from "../components/styledComponents"
+import {PageBodyGrid} from "../components/styledComponents"
 
-const IndexPage = () => (
+const IndexPage = () => {
+  const [profileImage, setProfileImage] = useState("");
+  useEffect(()=>{
+    setProfileImage(profilePic)
+
+  },[])
+  return (profileImage.length ?
   <Layout>
-    <SEO title="Bio Page" author="Ryan Mobley"/>
+   <SEO title="Bio Page" author="Ryan Mobley"/>
     <Container maxWidthXl>
 
       <div className="pageBody">
-        <pageBodyGrid item xs={12}>
+        <PageBodyGrid item xs={12}>
           <h1 className="subHeader title">About Me</h1>
-            <img src={profilePic} alt="profile" className="profile-pic"/>
+            <img src={profileImage} loading="eager" alt="profile" className="profile-pic fader-1"/>
           <div className="spacer"></div>
           <p className="indented paragraph fader-0">
-            Hello and welcome to my website! I am a Full-Stack developer with a
+            Hello and welcome to my website! I am a Full-Stack developer with 2 years experience and a
             certificate in Full Stack Web Development from the University of
             Texas Austin Coding Bootcamp 
             {/* intro here */}
-            <br/></p>
-          <p className="paragraph indented .fader-1">
+            <br/>
+
+            </p>
+          <p className="paragraph indented fader-2">
             {/* talk about qualifications and acomplishments */}
+            'm baby deep v craft beer 3 wolf moon bespoke, edison bulb portland 
+            fingerstache put a bird on it selfies. Seitan kogi activated charcoal 
+            vexillologist kickstarter subway tile fam succulents four dollar toast
+             roof party snackwave. Tousled 90's copper mug kickstarter. 
+             Fam thundercats vape distillery biodiesel butcher mumblecore knausgaard 
+             cronut retro vegan. Pitchfork health goth neutra listicle tilde 
+             meditation, mixtape chartreuse cardigan tumblr hoodie intelligentsia 
+             chicharrones chillwave.
             <br/></p>
-          <p className="paragraph fader-2">
+            <p className="paragaraph indented fader-3">
+            Shabby chic hot chicken fanny pack subway tile occupy marfa 
+            sartorial deep v tacos vinyl bushwick. Jianbing yr cliche 
+            eadymade normcore, ugh vexillologist disrupt chartreuse.
+             Woke kombucha plaid yr tilde, pop-up pug pickled ramps portland 
+             cray deep v vexillologist offal banjo. Humblebrag palo santo 
+             meditation vape af air plant. Crucifix poutine VHS, adaptogen 
+             jianbing cliche +1 palo santo YOLO shoreditch franzen iPhone 
+             small batch. Scenester kickstarter meditation kitsch organic, 
+             blog +1 farm-to-table.
+            </p>
+          <p className="paragraph indented fader-4">
           <strong className="subHeader">Specialized In: </strong><br/>
                     Javascript, JQuery, Node.js, Express, React.js, Redux.js, WebSockets, CSS ,HTML, MYSQL, 
                     MongoDB.<br/>
@@ -58,12 +86,13 @@ const IndexPage = () => (
               <img className="linkBox" id="resume" src={resumeLogo} alt="resume"/>
           </a>
         </Grid>
-        </pageBodyGrid>
+        </PageBodyGrid>
       </div>
     </Container>
     <ToTopButton/>
     
   </Layout>
-)
+  : <></>)
+}
 
 export default IndexPage
