@@ -11,11 +11,11 @@ import api from "../api";
 
 const SecondPage = () => {
   const [portWorks, setPort] = useState([{}]);
-  const queryDB = async () => {
-    const result = await api.getPieces();
-    if(result){
+  const queryDB = () => {
+   // const result = await api.getPieces();
+    //if(result){
       setPort(PortItems.reverse());
-    }
+    //}
   }
   useEffect(()=>{
     queryDB();

@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "ryan-mobley-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Ryan Mobley Portfolio",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ryan Mobley <rmobley@gmail.com>",
   "proxy": "http://localhost:1337/",
   "dependencies": {
     "@material-ui/core": "^4.8.3",

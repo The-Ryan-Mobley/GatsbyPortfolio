@@ -1,28 +1,50 @@
 {
-  "name": "GatsbyPortfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run start:prod",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "ryan-mobley-portfolio",
+  "private": true,
+  "description": "Ryan Mobley Portfolio",
+  "version": "0.1.0",
+  "author": "Ryan Mobley <rmobley@gmail.com>",
+  "proxy": "http://localhost:1337/",
   "dependencies": {
+    "@material-ui/core": "^4.8.3",
+    "@material-ui/styles": "^4.9.0",
     "axios": "^0.19.2",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-router": "0.0.1",
-    "fs": "0.0.1-security",
-    "mysql": "^2.17.1",
-    "path": "^0.12.7"
+    "gatsby": "^2.18.12",
+    "gatsby-image": "^2.2.34",
+    "gatsby-plugin-manifest": "^2.2.31",
+    "gatsby-plugin-offline": "^3.0.27",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sharp": "^2.3.5",
+    "gatsby-source-filesystem": "^2.1.40",
+    "gatsby-transformer-sharp": "^2.3.7",
+    "install": "^0.13.0",
+    "npm": "^6.13.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/The-Ryan-Mobley/GatsbyPortfolio"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
