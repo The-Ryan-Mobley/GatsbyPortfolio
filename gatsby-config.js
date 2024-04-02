@@ -4,10 +4,7 @@ module.exports = {
     description: `My portfolio as a Software Engineer`,
     author: `Ryan Mobley`,
   },
-  proxy: {
-    prefix: "/api",
-    url: "http://localhost:1337",
-  },
+  
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
