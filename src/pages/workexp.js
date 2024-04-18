@@ -98,8 +98,13 @@ const WorkExp = () => {
                     {
                         projectName: "Helios",
                         projectLogo: "",
-                        projectDescription: `Taiyaki freegan cray mixtape, post-ironic tousled portland. Unicorn cray marfa tote bag slow-carb hammock, occupy portland cronut biodiesel pug shabby chic fam hoodie. Tacos meggings fixie, green juice aesthetic copper mug authentic tousled. Brunch humblebrag green juice pabst shabby chic. Blue bottle umami woke, forage yuccie green juice subway tile. VHS viral art party, +1 tote bag live-edge squid poutine.
-                        Leggings blue bot`,
+                        projectDescription: `Helios was a solar sales platform designed for 
+                        door-to-door agents to sell solar panels to homeowners. 
+                        It was a full-stack web app using .NET and Angular. I worked on the 
+                        initial launch and briefly maintained support designing APIs, Designing 
+                        user-friendly interfaces for deal capture and lead creation; and worked 
+                        with both our front end designers and our front end designers to securely 
+                        connect end-to-end.`,
     
                         accomplishments: [
                             {
@@ -119,7 +124,15 @@ const WorkExp = () => {
                     {
                         projectName: "Internal Operations",
                         projectLogo: "",
-                        projectDescription: "Tousled cray tbh artisan keffiyeh, vaporware ethical af taxidermy. Cliche air plant cray tote bag, aesthetic small batch franzen enamel pin fam. Twee health goth vinyl truffaut, pok pok hammock put a bird on it lumbersexual 90's. Raw denim mixtape hoodie meditation neutra pop-up, DIY keffiyeh aesthetic. Bespoke unicorn try-hard wolf, kinfolk ugh artisan 3 wolf moon chicharrones everyday carry. Vexillologist pok pok slow-carb master cleanse tofu tumeric. Bushwick single-origin coffee kinfolk celiac chambray vape truffaut four loko brooklyn.",
+                        projectDescription: `I also worked to maintain the numerous processes and websites 
+                        used by VEM to conduct business in the retail energy sector. 
+                        I worked on both the customer facing portal handling enrollments. I worked on 
+                        the management app used by contracted marketers to manage and report on their agents. 
+                        Both of these sites were built off of .Net MVC Razor, and Razor Pages. I also worked 
+                        on SQL heavy internal applications allowing my co-workers to interface with the company's vast 
+                        database in a user-friendly way; as well as running complex processes with that data. I also 
+                        worked heavily on the back-end during seasonal promotional campaigns requiring quick adaptation 
+                        and problem solving to help support sales.`,
     
                         accomplishments: [
                             {
