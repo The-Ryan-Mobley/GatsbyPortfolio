@@ -35,7 +35,7 @@ const CompanyPiece = (props) => {
                 <div>
                 <p style={ptagElement}><strong>Company:</strong> {props.props.company}</p>
                 <p style={ptagElement}><strong>Position:</strong> Software Engineer</p>
-                <p style={ptagElement}><strong>From:</strong> {props.props.dateWorked}</p>
+                <p style={ptagElement}><strong>From:</strong> {props.props.dateRange}</p>
                 </div>
                 
             </Grid> 

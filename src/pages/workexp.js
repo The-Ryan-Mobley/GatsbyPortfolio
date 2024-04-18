@@ -14,10 +14,10 @@ import ToTopButton from "../components/toTopButton";
 import {PageBodyGrid} from "../components/styledComponents";
 import CompanyPiece from "../components/companyPiece";
 import CPaTLogo from "../images/CPaT-grey-logo.png";
-import vistaLogo from "../images/Vista.jpg";
 import invent from "../images/CPat-Invent-01-1024x343.png";
 import fms from "../images/A220-fms-page-lesson-player-1024x576.png";
 import lms from "../images/Access-V2-01-1024x330.png";
+import VistaLogo from "../images/Vista.jpg"
 const WorkExp = () => {
     
     const [empList,setEmpList] = useState([]);
@@ -27,14 +27,20 @@ const WorkExp = () => {
                 company: 'CPaT Global LLC',
                 companyPage: "https://www.cpat.com/",
                 companyNumber: "(832) 585-8601",
+                dateRange:"February 2020 To: February 2022",
                 companyLogo: CPaTLogo,
-                dateWorked: "February 2020 To: February 2022",
                 companyProjects: [
                     {
                         projectName: "Invent",
                         projectLogo: invent,
-                        projectDescription: `Taiyaki freegan cray mixtape, post-ironic tousled portland. Unicorn cray marfa tote bag slow-carb hammock, occupy portland cronut biodiesel pug shabby chic fam hoodie. Tacos meggings fixie, green juice aesthetic copper mug authentic tousled. Brunch humblebrag green juice pabst shabby chic. Blue bottle umami woke, forage yuccie green juice subway tile. VHS viral art party, +1 tote bag live-edge squid poutine.
-                        Leggings blue bot`,
+                    
+                        projectDescription: `The Invent lesson designer is a web app used to create online lessons 
+                        for aviation specialist like pilots and flight attendants. I was part of the initial front-end 
+                        team developing Invent using React and Typescript. I specialized in the Flight Management System (FMS) trainer; basically 
+                        allowing users to emulate the functionality of an fms displaying things like: flight path, velocity, fuel etc. 
+                        One of my biggest accomplishments with Invent was it’s drag-and-drop asset uploader. 
+                        Users were able to drag various file types like: images, videos and PDFs into the uploader 
+                        where it would save their assets in our system to be used in their lessons.`,
     
                         accomplishments: [
                             {
@@ -54,7 +60,13 @@ const WorkExp = () => {
                     {
                         projectName: "Access LMS",
                         projectLogo: lms,
-                        projectDescription: "Tousled cray tbh artisan keffiyeh, vaporware ethical af taxidermy. Cliche air plant cray tote bag, aesthetic small batch franzen enamel pin fam. Twee health goth vinyl truffaut, pok pok hammock put a bird on it lumbersexual 90's. Raw denim mixtape hoodie meditation neutra pop-up, DIY keffiyeh aesthetic. Bespoke unicorn try-hard wolf, kinfolk ugh artisan 3 wolf moon chicharrones everyday carry. Vexillologist pok pok slow-carb master cleanse tofu tumeric. Bushwick single-origin coffee kinfolk celiac chambray vape truffaut four loko brooklyn.",
+                        projectDescription: `The Access Learning Management System (LMS) was a 
+                        full-stack .NET and Angular web application used to upload, manage, and view 
+                        aviation lessons. I worked on both the front-end and back end on Access as 
+                        well as managed it’s Android, iOS, and Windows apps used to take lessons. I also worked on
+                        Access's 'TypingDNA' integration allowing the system to verify a user's identity based on
+                        their typing patterns to avoid cheating; and added real-time monitoring reports for user's 
+                        identity scores.`,
     
                         accomplishments: [
                             {
@@ -78,21 +90,21 @@ const WorkExp = () => {
             },
             {
                 company: 'Vista Energy Marketing',
-                companyPage: "https://vistaenergymarketing.com",
-                companyNumber: "(832) 585-8601",
-                companyLogo: vistaLogo,
-                dateWorked: "February 2022 To: Present",
+                companyPage: "https://vistaenergymarketing.com/",
+                companyNumber: "(888) 211 - 4093",
+                dateRange:"February 2022 To: Present",
+                companyLogo: VistaLogo,
                 companyProjects: [
                     {
                         projectName: "Helios",
-                        projectLogo: invent,
+                        projectLogo: "",
                         projectDescription: `Taiyaki freegan cray mixtape, post-ironic tousled portland. Unicorn cray marfa tote bag slow-carb hammock, occupy portland cronut biodiesel pug shabby chic fam hoodie. Tacos meggings fixie, green juice aesthetic copper mug authentic tousled. Brunch humblebrag green juice pabst shabby chic. Blue bottle umami woke, forage yuccie green juice subway tile. VHS viral art party, +1 tote bag live-edge squid poutine.
                         Leggings blue bot`,
     
                         accomplishments: [
                             {
                                 piece: "FMS Trainer",
-                                image: fms,
+                                image: "",
                                 description: "I'm baby green juice austin truffaut meditation, XOXO ethical bushwick authentic. Trust fund cloud bread vaporware asymmetrical unicorn lumbersexual fixie pok pok, deep v artisan taxidermy. Crucifix retro chillwave quinoa kombucha hashtag chambray succulents skateboard neutra cloud bread small batch venmo. Cray fingerstache adaptogen humblebrag post-ironic single-origin coffee drinking vinegar hexagon. Affogato retro polaroid ugh plaid scenester keffiyeh bespoke before they sold out. Street art pabst single-origin coffee umami, echo park cray viral PBR&B hoodie twee letterpress chambray vape vaporware godard."
     
                             },
@@ -105,19 +117,24 @@ const WorkExp = () => {
                         ]
                     },
                     {
-                        projectName: "Access LMS",
-                        projectLogo: lms,
+                        projectName: "Internal Operations",
+                        projectLogo: "",
                         projectDescription: "Tousled cray tbh artisan keffiyeh, vaporware ethical af taxidermy. Cliche air plant cray tote bag, aesthetic small batch franzen enamel pin fam. Twee health goth vinyl truffaut, pok pok hammock put a bird on it lumbersexual 90's. Raw denim mixtape hoodie meditation neutra pop-up, DIY keffiyeh aesthetic. Bespoke unicorn try-hard wolf, kinfolk ugh artisan 3 wolf moon chicharrones everyday carry. Vexillologist pok pok slow-carb master cleanse tofu tumeric. Bushwick single-origin coffee kinfolk celiac chambray vape truffaut four loko brooklyn.",
     
                         accomplishments: [
                             {
-                                piece: "Widget Dashboard",
+                                piece: "Customer Portal",
                                 image: "",
                                 description: "Cold-pressed tilde biodiesel, before they sold out put a bird on it succulents cred quinoa single-origin coffee bespoke. Trust fund pitchfork you probably haven't heard of them roof party, semiotics marfa food truck. Lomo normcore bespoke, man braid jianbing pinterest live-edge master cleanse small batch four loko knausgaard gochujang aesthetic. Disrupt bicycle rights kinfolk poutine unicorn wayfarers swag copper mug. Vaporware lomo skateboard authentic bicycle rights slow-carb. Aesthetic kale chips cloud bread copper mug sriracha bespoke."
     
                             },
                             {
-                                piece: "iOS and Windows Apps",
+                                piece: "Emerald",
+                                image: "",
+                                description:"'m baby tousled four loko street art williamsburg next level freegan succulents selvage +1 disrupt vaporware. Woke wolf meditation pickled raw denim, polaroid ramps heirloom slow-carb iPhone kogi iceland drinking vinegar hashtag organic. Four dollar toast chicharrones shoreditch, venmo seitan banjo small batch skateboard locavore meditation blue bottle af mixtape meggings. Master cleanse waistcoat four dollar toast ethical, roof party organic activated charcoal hella. Kinfolk pabst prism skateboard hammock stumptown, venmo forage fam. Squid cliche flannel la croix. Food truck taxidermy authentic, enamel pin wayfarers ramps mumblecore yuccie kickstarter fanny pack."
+                            },
+                            {
+                                piece: "Seasonal Campaigns",
                                 image: "",
                                 description:"'m baby tousled four loko street art williamsburg next level freegan succulents selvage +1 disrupt vaporware. Woke wolf meditation pickled raw denim, polaroid ramps heirloom slow-carb iPhone kogi iceland drinking vinegar hashtag organic. Four dollar toast chicharrones shoreditch, venmo seitan banjo small batch skateboard locavore meditation blue bottle af mixtape meggings. Master cleanse waistcoat four dollar toast ethical, roof party organic activated charcoal hella. Kinfolk pabst prism skateboard hammock stumptown, venmo forage fam. Squid cliche flannel la croix. Food truck taxidermy authentic, enamel pin wayfarers ramps mumblecore yuccie kickstarter fanny pack."
                             }
@@ -136,7 +153,7 @@ const WorkExp = () => {
         <SEO title="Work Experience" />
         <div className="pageBody">
         <PageBodyGrid item xs={12}>
-            <h1>Work History</h1>
+            <h1>Work History?</h1>
             <div>
                 {empList.length ?(
                     empList.map((company, index) => (<CompanyPiece props={company} key={index}/>))
