@@ -2,7 +2,7 @@
 [
     {
         "projectTitle": "Gif Site", 
-        "pic":"/images/gifSite.png",
+        "pic":"../images/gifSite.png",
         "url":"https://the-ryan-mobley.github.io/GIF_Site/",
         "repo":"https://github.com/The-Ryan-Mobley/GIF_Site",
         "technology":"Bootstrap styling framework, Javascript, Jquery, the GIPHY Api",
@@ -10,7 +10,7 @@
     },
     {
         "projectTitle": "STRGZR", 
-        "pic":"/images/STRGZR.png",
+        "pic":"../images/STRGZR.png",
         "url":"https://the-ryan-mobley.github.io/team-thor-project1/",
         "repo":"https://github.com/The-Ryan-Mobley/team-thor-project1",
         "technology":"Materialize styling framework Leaflet.js,JQuery,Skymap, and the Open Weather API",
@@ -18,7 +18,7 @@
     },
     {
         "projectTitle": "Burger Time",
-        "pic":"/images/burgerTime.png",
+        "pic":"../images/burgerTime.png",
         "url":"https://floating-oasis-39732.herokuapp.com",
         "repo":"https://github.com/The-Ryan-Mobley/burgerTime",
         "technology":"Full-Stack using Node.js Express, MYSQL, Handlebars, Jquery, and the Skeleton CSS framework",
@@ -26,7 +26,7 @@
     },
     {
         "projectTitle": "H-Town Brews",
-        "pic":"/images/brews.png",
+        "pic":"../images/brews.png",
         "url":"https://ancient-beach-07931.herokuapp.com/",
         "repo":"https://github.com/The-Ryan-Mobley/project2personal",
         "technology":"Full-Stack using Node.js Express, Express-Sessions, MYSQL, Handlebars, Jquery, and Materialize",
@@ -34,7 +34,7 @@
     },
     {
         "projectTitle": "Today I Scraped",
-        "pic":"/images/TIS.png",
+        "pic":"../images/TIS.png",
         "url":"https://fast-taiga-02345.herokuapp.com/",
         "repo":"https://github.com/The-Ryan-Mobley/newsScrape",
         "technology":"Full-Stack using Node.js Express, Axios/ Cherrio for scraping, MongoDB with the Mongoose object modeling tool, and skeleton css",
@@ -42,7 +42,7 @@
     },
     {
         "projectTitle": "Click-React-App",
-        "pic":"/images/CRA.png",
+        "pic":"../images/CRA.png",
         "url":"https://the-ryan-mobley.github.io/click-react-app/",
         "repo":"https://github.com/The-Ryan-Mobley/click-react-app",
         "technology":"Serverless using only React and Skeleton css",
@@ -50,7 +50,7 @@
     },
     {
         "projectTitle": "Boogle",
-        "pic":"/images/boogle.png",
+        "pic":"../images/boogle.png",
         "url":"https://limitless-garden-74095.herokuapp.com/",
         "repo":"https://github.com/The-Ryan-Mobley/boogle",
         "technology":"MERN stack MongoDB, Express, React, Nodejs",
@@ -58,7 +58,7 @@
     },
     {
         "projectTitle": "Rocks-fall",
-        "pic":"/images/lobbyScreen.png",
+        "pic":"../images/lobbyScreen.png",
         "url":"https://vast-citadel-52957.herokuapp.com/",
         "repo":"https://github.com/The-Ryan-Mobley/rocks-fall",
         "technology":"MERN stack MongoDB, Express, React, Node.js, with Redux and SocketIo",
@@ -66,7 +66,7 @@
     },
     {
         "projectTitle": "Hook Scrape",
-        "pic":"/images/hookscrape.png",
+        "pic":"../images/hookscrape.png",
         "url":"https://powerful-cove-03486.herokuapp.com/",
         "repo":"https://github.com/The-Ryan-Mobley/hookScrape",
         "technology":"MERN stack MongoDB, Express, React, Node.js. using material UI for the layout",
